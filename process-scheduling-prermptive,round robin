@@ -74,7 +74,7 @@ main()
 			{
 				burst_tm[0]=burst_tm[0]-quantum_t;
 				time=state+quantum_t;
-				function2(pnt,time);
+				function1(pnt,time);
 				AddQue(pnt);
 			}
 		}
@@ -107,6 +107,11 @@ main()
 		}
 		flag++;
 		cout<<"]-P"<<pnt+1<<"-["<<time;
+		cout<<"]-P"<<pnt+2<<"-["<<time;
+		cout<<"]-P"<<pnt+3<<"-["<<time;
+		cout<<"]-P"<<pnt+4<<"-["<<time;
+		cout<<"]-P"<<pnt+5<<"-["<<time;
+		cout<<"]-P"<<pnt+6<<"-["<<time;
 	}
 	while(noe!=0);
 	cout<<"\n\nPROCESS\t AT\t BT\t CT\t TT\t WT\n";
@@ -118,5 +123,5 @@ main()
 		avg_wt=avg_wt+wait_t;
 		avg_tt=avg_tt+totaltime;
 	}
-	cout<<"\nAVERAGE Total Time: "<<avg_tt/4<<"\nAVERAGE Wait Time: "<<avg_wt/4;
+	cout<<"\nAVERAGE Total Time: "<<avg_tt/6<<"\nAVERAGE Wait Time: "<<avg_wt/6;
 }
